@@ -31,11 +31,7 @@ zip -r email_verification_lambda.zip .
 {
   "Records": [
     {
-      "Sns": {
-        "Message": "{
-            \"email\": \"user@example.com\",
-            \"verification_link\": \"https://example.com/verify?token=abc123\"
-        }"
+      "Sns": {"Message": "{\"email\": \"user@example.com\",\"verification_link\": \"https://example.com/verify?token=abc123\"}"
       }
     }
   ]
