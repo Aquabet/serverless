@@ -12,7 +12,9 @@ Uses the SendGrid API to send verification emails with customizable content.
 
 - `SENDGRID_API_KEY`: SendGrid API key for email sending.
 - `AWS_PROFILE`: Included in the sender email (e.g., dev | demo).
-- `DOMAIN`: The domain for the sender email address.(e.g., example.com)
+- `DOMAIN`: The domain for the sender email address.(e.g., example.com).
+
+The email will send from `AWS_PROFILE@DOMAIN` (e.g., dev@example.com).
 
 ## Deployment
 
