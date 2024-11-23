@@ -10,9 +10,9 @@ Uses the SendGrid API to send verification emails with customizable content.
 
 ## Environment Variables
 
-SENDGRID_API_KEY: SendGrid API key for email sending.
-AWS_PROFILE: Included in the sender email (e.g., dev | demo).
-DOMAIN: The domain for the sender email address.(e.g., example.com)
+- `SENDGRID_API_KEY`: SendGrid API key for email sending.
+- `AWS_PROFILE`: Included in the sender email (e.g., dev | demo).
+- `DOMAIN`: The domain for the sender email address.(e.g., example.com)
 
 ## Deployment
 
@@ -32,7 +32,10 @@ zip -r email_verification_lambda.zip .
   "Records": [
     {
       "Sns": {
-        "Message": "{\"email\": \"user@example.com\", \"verification_link\": \"https://example.com/verify?token=abc123\"}"
+        "Message": "{
+            \"email\": \"user@example.com\",
+            \"verification_link\": \"https://example.com/verify?token=abc123\"
+        }"
       }
     }
   ]
