@@ -10,9 +10,11 @@ Uses the SendGrid API to send verification emails with customizable content.
 
 ## Environment Variables
 
-- `SENDGRID_API_KEY`: SendGrid API key for email sending.
 - `AWS_PROFILE`: Included in the sender email (e.g., dev | demo).
 - `DOMAIN`: The domain for the sender email address.(e.g., example.com).
+- `SECRET_NAME`: The name of aws secrets managers secret.
+- `PARAMETERS_SECRETS_EXTENSION_HTTP_PORT`: Port for layer AWS-Parameters-and-Secrets-Lambda-Extension
+, default 2773.
 
 The email will send from `AWS_PROFILE@DOMAIN` (e.g., dev@example.com).
 
