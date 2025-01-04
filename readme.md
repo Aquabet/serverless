@@ -1,5 +1,11 @@
 # Email Verification Lambda Function
 
+## CSYE-6225
+
+- [Web Application](https://github.com/Aquabet/webapp)
+- [Terraform-Infra](https://github.com/Aquabet/tf-aws-infra)
+- [Serverless Lambda](https://github.com/Aquabet/serverless)
+
 ## Functionality
 
 1. Processes SNS Messages:
